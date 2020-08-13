@@ -1,88 +1,65 @@
-# vue-admin-template
+# easy-element-admin
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
+基于 Egg + Vue + Webpack ＋ Element 单页面管理系统骨架
 
-**Live demo:** http://panjiachen.github.io/vue-admin-template
+- Egg + Vue + Vuex + Vue-Router + Webpack
+- Egg 只提供数据服务，页面由 Vue 前端渲染
+- Auto Building, Hot Reload, Code Splitting, High Speed, Performance Optimization
+- 统一 fetchApi 请求，内置国际化支持
 
-[中文文档](https://github.com/PanJiaChen/vue-admin-template/blob/master/README-zh.md)
 
-## Build Setup
+![截图](https://github.com/easy-team/egg-vue-webpack-boilerplate/blob/element-admin/docs/egg-element-admin.png?raw=true)
+
+## 使用
+
+### 安装依赖
 
 ```bash
-# Clone project
-git clone https://github.com/PanJiaChen/vue-admin-template.git
-
-# Install dependencies
 npm install
+```
 
-# Serve with hot reload at localhost:9528
+### 本地开发
+
+```bash
 npm run dev
-
-# Build for production with minification
-npm run build
-
-# Build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-## Demo
+应用访问: http://127.0.0.1:7001
 
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
 
-## Extra
+### 发布模式
 
-If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
+- 首先在本地或者ci构建好jsbundle文件
 
-This project is based on `webpack4` development. If you want to use `webpack3` development, please use this branch [webpack3](https://github.com/PanJiaChen/vue-admin-template/tree/webpack3)
-
-For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
-
-## Related Project
-
-[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-[electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-
-[vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
-
-### Element-Ui using cdn tutorial
-
-First find `index.html`([root directory](https://github.com/PanJiaChen/vue-admin-template/blob/element-ui-cdn/index.html))
-
-Import css and js of `Element`, and then import vue. Because `Element` is vue-dependent, vue must be import before it.
-
-Then find [webpack.base.conf.js](https://github.com/PanJiaChen/vue-admin-template/blob/element-ui-cdn/build/webpack.base.conf.js)
-Add `externals` to make webpack not package vue and element.
-
-```
-externals: {
-  vue: 'Vue',
-  'element-ui':'ELEMENT'
-}
+```bash
+npm run build 
 ```
 
-Finally there is a small detail to pay attention to that if you import vue in global, you don't need to manually `Vue.use(Vuex)`, it will be automatically mounted, see
-[issue](https://github.com/vuejs/vuex/issues/731)
+- 然后,启动应用
 
-And you can use `npm run build --report` to see the effect
+```bash
+npm start 
+```
 
-Pictured:
-![demo](https://panjiachen.github.io/images/element-cdn.png)
+详细打包部署请见： http://hubcarl.github.io/easywebpack/vue/dev/
 
-**[Detailed code](https://github.com/PanJiaChen/vue-admin-template/commit/746aff560932704ae821f82f10b8b2a9681d5177)**
+## 文档
 
-**[Branch](https://github.com/PanJiaChen/vue-admin-template/tree/element-ui-cdn)**
+- https://www.yuque.com/easy-team/egg-vue
+- https://zhuanlan.zhihu.com/easywebpack
 
-## Browsers support
+## 插件
 
-Modern browsers and Internet Explorer 10+.
+- [easywebpack](https://github.com/easy-team/easywebpack) ^4.x.x
+- [easywebpack-vue](https://github.com/easy-team/easywebpack) ^4.x.x
+- [egg-view-vue-ssr](https://github.com/easy-team/egg-view-vue-ssr) ^3.x.x
+- [egg-webpack](https://github.com/easy-team/egg-webpack) ^4.x.x
+- [egg-webpack-vue](https://github.com/easy-team/egg-webpack-vue) ^2.x.x
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
+## 命令行
+
+可以通过 [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) 初始化本项目
 
 ## License
 
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen
+[MIT](LICENSE)

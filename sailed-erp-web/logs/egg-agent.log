@@ -1,0 +1,12 @@
+2020-08-13 19:34:27,169 INFO 8148 [egg:logger] init all loggers with options: {"dir":"G:\\temp\\temp\\logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"temp-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-08-13 19:34:27,181 INFO 8148 [egg:core] dump config after load, 5ms
+2020-08-13 19:34:27,230 INFO 8148 [egg-watcher] Start watching: ["G:\\temp\\temp\\app","G:\\temp\\temp\\config","G:\\temp\\temp\\mocks","G:\\temp\\temp\\mocks_proxy","G:\\temp\\temp\\app.js"]
+2020-08-13 19:34:27,230 INFO 8148 [egg-watcher] Start watching: "G:\\temp\\temp\\app"
+2020-08-13 19:34:27,230 INFO 8148 [egg-watcher] Start watching: "G:\\temp\\temp\\config"
+2020-08-13 19:34:27,230 INFO 8148 [egg-watcher] Start watching: "G:\\temp\\temp\\mocks"
+2020-08-13 19:34:27,230 INFO 8148 [egg-watcher] Start watching: "G:\\temp\\temp\\mocks_proxy"
+2020-08-13 19:34:27,230 INFO 8148 [egg-watcher] Start watching: "G:\\temp\\temp\\app.js"
+2020-08-13 19:34:27,231 INFO 8148 [egg-watcher:agent] watcher start success
+2020-08-13 19:34:27,253 INFO 8148 [egg:core] dump config after ready, 17ms
+2020-08-13 19:34:44,545 INFO 8148 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"G:\\temp\\temp\\config\\manifest.json","stat":{"dev":265291642,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":281474980451707,"size":1158,"atimeMs":1597318483982.5283,"mtimeMs":1597318483982.5283,"ctimeMs":1597318483982.5283,"birthtimeMs":1597318483982.5283,"atime":"2020-08-13T11:34:43.983Z","mtime":"2020-08-13T11:34:43.983Z","ctime":"2020-08-13T11:34:43.983Z","birthtime":"2020-08-13T11:34:43.983Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-08-13 19:34:44,572 INFO 8148 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"G:\\temp\\temp\\config\\manifest.json","stat":{"dev":265291642,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":281474980451707,"size":1158,"atimeMs":1597318483982.5283,"mtimeMs":1597318483982.5283,"ctimeMs":1597318483982.5283,"birthtimeMs":1597318483982.5283,"atime":"2020-08-13T11:34:43.983Z","mtime":"2020-08-13T11:34:43.983Z","ctime":"2020-08-13T11:34:43.983Z","birthtime":"2020-08-13T11:34:43.983Z"},"remove":false,"isDirectory":false,"isFile":true}

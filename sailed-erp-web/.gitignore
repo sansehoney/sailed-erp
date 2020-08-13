@@ -1,15 +1,17 @@
-.DS_Store
-node_modules/
-dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-package-lock.json
+test/fixtures
+test/benchmark
+test/client
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+coverage/
+private/
+run/
+
+public/
+node_modules/
+app/mocks
+app/web/store
+plugins/
+app/web/asset/
+app/view/
+test.js
+script/webpack4/
